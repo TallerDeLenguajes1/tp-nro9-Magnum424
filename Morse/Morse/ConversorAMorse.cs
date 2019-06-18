@@ -11,7 +11,6 @@ namespace Helpers
         ///converso de texto a morse
         public static string TextoAMorse(string txt)
         {
-            ///Tomo un string vacio y voy concatenando en la misma los nuevos caracteres en morse
             string morse = "";  
             foreach (var car in txt)
             {
@@ -105,9 +104,7 @@ namespace Helpers
         //Conversor de morse a texto
         public static string MorseATexto(string mortxt)
         {
-            ///tomo un string vacio y le concateno los caracteres traducidos uno a uno
             string txt = "";
-            ///Separo el string que entra en los espacios, y los guardo en un string para luego traducirlos uno a uno
             string[] cadena = mortxt.Split(' ');
             foreach (var cad in cadena)
             {
